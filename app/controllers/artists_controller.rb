@@ -15,16 +15,20 @@ class ArtistsController < ApplicationController
   # GET /artists/new
   def new
     @artist = Artist.new
+    @genres = Genre.all
   end
 
   # GET /artists/1/edit
   def edit
+    @genres = Genre.all
   end
 
   # POST /artists
   # POST /artists.json
   def create
     @artist = Artist.new(artist_params)
+    @genres = Genre.all
+
 
     respond_to do |format|
       if @artist.save

@@ -12,8 +12,11 @@
 
 <p>
   <strong>Artist:</strong>
-  <%= @song.artist_id %>
+  <%= @song.artist.name %>
 </p>
+<!-- 
+<iframe width="560" height="315" src="<%= @song.video %>" frameborder="0" allowfullscreen></iframe> -->
 
 <%= link_to 'Edit', edit_song_path(@song) %> |
 <%= link_to 'Back', songs_path %>
+
