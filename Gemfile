@@ -31,6 +31,10 @@ gem 'quiet_assets', group: :development
 gem 'thin'#, group: :development
 
 gem 'awesome_print'
+
+# Heroku needs this to deploy.
+gem 'rails_12factor', group: :production
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
