@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root 'genres#index'
+  root 'pages#home'
 
   get '/about' => 'pages#about'
 
