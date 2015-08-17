@@ -1,9 +1,7 @@
 Rails.application.routes.draw do
   root 'genres#index'
 
-  get 'pages/home'
-
-  get 'pages/about'
+  get '/about' => 'pages#about'
 
   resources :songs
 
